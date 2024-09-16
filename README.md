@@ -6,7 +6,9 @@ Copy below codes to your gitconfig.
 
 ```gitconfig
 [delta]
+    navigate = true
     features = adoyle-dark
+    side-by-side = true
 
 [delta "adoyle-dark"]
     dark = true
@@ -43,7 +45,7 @@ Copy below codes to your gitconfig.
     whitespace-error-style = magenta reverse
     zero-style = syntax
     # For blame
-    blame-format = "{timestamp:<15} {author:<10} {commit:<8} "
+    blame-format = "{timestamp:<15} {author:<14} {commit:<8} "
     blame-palette = "#050505" "#151515"
     blame-separator-format = "│{n:^4}"
     # For grep
@@ -52,6 +54,38 @@ Copy below codes to your gitconfig.
     grep-context-line-style = grey
     grep-match-word-style = red
 ```
+
+## Preview
+
+### side-by-side=true
+
+```gitconfig
+[delta]
+    navigate = true
+    features = adoyle-dark
+    side-by-side = true
+```
+
+![2024-09-16_21 20 53@2x](https://github.com/user-attachments/assets/c3704471-fd34-427a-935b-dccd869ffc14)
+
+### side-by-side=false
+
+```gitconfig
+[delta]
+    navigate = true
+    features = adoyle-dark
+    side-by-side = false
+```
+
+![2024-09-16_21 53 10@2x](https://github.com/user-attachments/assets/680ff099-0300-4307-9e37-da48e9916bb0)
+
+### git blame
+
+![2024-09-16_21 55 58@2x](https://github.com/user-attachments/assets/892b80ca-f209-44fa-a65e-7880e306b5ee)
+
+### git grep
+
+![2024-09-16_22 00 40@2x](https://github.com/user-attachments/assets/2dfca169-4054-448e-936c-71baaceacbef)
 
 
 ## Copyright and License
